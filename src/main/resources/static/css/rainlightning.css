@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+/*     background-image: url(../img/background.jpg); */
+    background-image: url(../img/samnel_copie2.jpg);
+
+    background-size: cover;
+}
+.rain{
+    height: 100vh;
+/*     background-image: url(../img/rain.png); */
+    animation: rain 0.3s linear infinite;
+}
+@keyframes rain{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 20% 100%;
+    }
+}
+.rain::before{
+    content: "";
+    position: absolute;
+/*     position: inherit; */
+    
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    
+    background-image: url(../img/lightning.png);
+/*     background-image: url(../img/samnel2.png); */
+
+    top: -100px;
+    transform: rotate(180deg);
+/*     transform: rotate(0deg); */
+    animation: lightning 1s linear infinite;
+    opacity: 1;
+}
+@keyframes lightning{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    31%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.raintwo{
+    height: 100vh;
+/*     background-image: url(../img/rain.png); */
+    animation: rain 0.3s linear infinite;
+}
+@keyframes rain{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 20% 100%;
+    }
+}
+.raintwo::before{
+    content: "";
+    position: absolute;
+/*     position: inherit; */
+    
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    
+/*     background-image: url(../img/lightning.png); */
+    background-image: url(../img/samnel2.png);
+
+    top: -100px;
+    transform: rotate(180deg);
+/*     transform: rotate(0deg); */
+    animation: lightning 1s linear infinite;
+    opacity: 1;
+}

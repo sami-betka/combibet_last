@@ -23,4 +23,10 @@ public class MainController {
 		
 		return "rainlightning";
 	}
+	
+	@GetMapping("/video")
+	public String video () {
+		
+		return "video";
+	}
 }
